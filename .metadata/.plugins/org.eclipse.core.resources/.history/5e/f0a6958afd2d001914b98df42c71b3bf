@@ -1,0 +1,47 @@
+package fr.unice.miage.tp1;
+
+import java.io.File;
+import java.io.FilenameFilter;
+
+public class Repertoire implements FilenameFilter {
+	//private File file;
+
+	public Repertoire() {
+		
+	}
+
+	public static void main(String[] args) {
+		Filtre filtre;
+		
+		//Question 1 :
+		
+		String repertoire=".";
+		File file = new File(repertoire);
+		String[] listeFichier = file.list();
+		
+		for (int i=0; i<listeFichier.length; i++)
+		{
+			System.out.println(listeFichier[i]);
+		}
+		
+		//Question 2 :
+		File[] listeFichier2 = file.listFiles();
+		for (int i=0; i<listeFichier2.length; i++)
+		{
+			System.out.println(listeFichier2[i]);
+		}
+		
+		
+		//Question 3 :
+		
+		
+
+	}
+
+	@Override
+	public boolean accept(File dir, String name) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}
