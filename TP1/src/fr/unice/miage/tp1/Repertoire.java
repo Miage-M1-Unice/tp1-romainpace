@@ -22,7 +22,7 @@ public class Repertoire {
 	}
 
 	public static void main(String[] args) {
-		Filtre filtre;
+		Filtre filtre= new Filtre();
 		Repertoire rep = new Repertoire();
 		
 		//Question 1 :
@@ -37,7 +37,15 @@ public class Repertoire {
 		}
 		
 		//Question 2 :
-		rep.parcoursAvance(file);
+		//rep.parcoursAvance(file);
+		for(int i=0; i<listeFichier.length; i++)
+		{
+			//if (filtre.accept(listeFichier[i], file.getName()))
+	
+			
+		}
+			
+		
 
 		//Question 3 :
 		

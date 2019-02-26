@@ -1,5 +1,0 @@
-package fr.unice.miage.tp1;
-
-public interface Filtre {
-	
-}
